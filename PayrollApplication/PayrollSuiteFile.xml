@@ -1,0 +1,27 @@
+<suite name="PayrollApplication" parallel="methods" thread-count="3"> 
+	 <!--parallely two(according to thread count how many testcases has to work) tc are working here one from chrome and one from firefox!-->
+	<!--here we have two test tags (one for chrome and one for firefox) which means that we are running the scripts in multiple browser ,we can add more browser also. both will be running simultaneously !-->
+	<test name="ChromeTest">  
+		<listeners>		<!--//listener class will listen our testcases rom the start to end!-->
+			<listener class-name="utilities.RetryListener" />	                                      <!-- !-->
+			<listener class-name="utilities.ExtenetReport" />
+		</listeners>                                            
+		<parameter name="Browser" value="Chrome"></parameter>
+		<classes>
+			<class name="testcasePkg.LoginPageTest"></class>
+				<class name="testcasePkg.HomePageTest"></class>
+			<class name="testcasePkg.ClientsPageTest"></class>
+		</classes>
+	</test>
+	<!--<test name="FirefoxTest">
+		<listeners>			
+			<listener class-name="utilities.ExtenetReport" />
+		</listeners>
+		<parameter name="Browser" value="Firefox"></parameter>
+		<classes>
+			<class name="testcasePkg.LoginPageTest"></class>
+				<class name="testcasePkg.HomePageTest"></class>
+			<class name="testcasePkg.ClientsPageTest"></class>
+		</classes>
+	</test>!-->
+</suite>

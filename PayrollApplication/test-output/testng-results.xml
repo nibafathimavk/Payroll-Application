@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-06T00:06:35 AST" name="PayrollApplication" finished-at="2024-02-06T00:06:45 AST" duration-ms="10480">
+    <groups>
+    </groups>
+    <test started-at="2024-02-06T00:06:35 AST" name="ChromeTest" finished-at="2024-02-06T00:06:45 AST" duration-ms="10480">
+      <class name="testcasePkg.PaySlipPageTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testcasePkg.PaySlipPageTest@145f66e3]" started-at="2024-02-06T00:06:35 AST" name="beforeMethod" finished-at="2024-02-06T00:06:39 AST" duration-ms="4342" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyOnPaySlipTableContentRead()[pri:0, instance:testcasePkg.PaySlipPageTest@145f66e3]" started-at="2024-02-06T00:06:39 AST" name="verifyOnPaySlipTableContentRead" finished-at="2024-02-06T00:06:45 AST" duration-ms="5872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOnPaySlipTableContentRead -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testcasePkg.PaySlipPageTest@145f66e3]" started-at="2024-02-06T00:06:45 AST" name="afterMethode" finished-at="2024-02-06T00:06:45 AST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyOnPaySlipTableContentRead status=SUCCESS method=PaySlipPageTest.verifyOnPaySlipTableContentRead()[pri:0, instance:testcasePkg.PaySlipPageTest@145f66e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testcasePkg.PaySlipPageTest -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- PayrollApplication -->
+</testng-results>

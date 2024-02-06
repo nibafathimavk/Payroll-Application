@@ -1,0 +1,22 @@
+<suite name="PayrollApplication" parallel="tests" thread-count="1"> 
+	 <!--parallely two(according to thread count how many testcases has to work) tc are working here one from chrome and one from firefox!-->
+	
+	<test name="ChromeTest">  
+		<listeners>			                                      <!-- listener class will listen the status every time!-->
+			<listener class-name="utilities.ExtenetReport" />
+		</listeners>                                            
+		<parameter name="Browser" value="Chrome"></parameter>
+		<groups>   <!--it is used to group certain testcases to run together when that particular suite is running. add grouups with @Test in the testcases of testNg classes!-->
+			<run>
+				<exclude name="Smoketest"></exclude>
+			</run>
+		</groups>
+		<classes>
+			<class name="testcasePkg.PaySlipPageTest"></class>
+			
+		</classes>
+	</test>
+
+</suite>
+
+<!-- when we use  suite file with groups then group name should be added to the testcases @Test notation!-->

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [PayrollApplication]">
+  <listeners>
+    <listener class-name="utilities.ExtenetReport"/>
+  </listeners>
+  <test thread-count="1" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="Browser" value="Chrome"/>
+    <groups>
+      <run>
+        <exclude name="Smoketest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testcasePkg.PaySlipPageTest">
+        <methods>
+          <include name="verifyOnPaySlipTableContentRead"/>
+          <include name="afterMethode"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testcasePkg.PaySlipPageTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [PayrollApplication] -->
